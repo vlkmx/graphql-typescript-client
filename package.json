@@ -3,9 +3,19 @@
   "version": "1.0.0",
   "description": "GraphQL Code Generator plugin for generating mutations and subscriptions",
   "license": "MIT",
+  "author": "vlkmx",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "tsc -p tsconfig.json --noemit"
+  },
+  "typescript": {
+    "definition": "dist/index.d.ts"
+  },
+  "publishConfig": {
+    "directory": "dist",
+    "access": "public"
   },
   "dependencies": {
     "@graphql-codegen/plugin-helpers": "^5.1.0",
@@ -18,16 +28,6 @@
     "graphql": "^14.0.0 || ^15.0.0 || ^16.0.0",
     "graphql-tag": "^2"
   },
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "typescript": {
-    "definition": "dist/index.d.ts"
-  },
-  "publishConfig": {
-    "directory": "dist",
-    "access": "public"
-  },
-  "author": "vlkmx",
   "devDependencies": {
     "@types/node": "^22.15.21",
     "prettier": "^3.5.3",
