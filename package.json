@@ -13,23 +13,28 @@
   "typescript": {
     "definition": "dist/index.d.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vlkmx/graphql-typescript-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vlkmx/graphql-typescript-client/issues"
+  },
   "publishConfig": {
     "directory": "dist",
     "access": "public"
-  },
-  "dependencies": {
-    "@graphql-codegen/plugin-helpers": "^5.1.0",
-    "@graphql-codegen/visitor-plugin-common": "^5.8.0",
-    "change-case-all": "^2.1.0",
-    "graphql": "^16.11.0",
-    "graphql-tag": "^2.12.6"
   },
   "peerDependencies": {
     "graphql": "^14.0.0 || ^15.0.0 || ^16.0.0",
     "graphql-tag": "^2"
   },
   "devDependencies": {
+    "@graphql-codegen/plugin-helpers": "^5.1.0",
+    "@graphql-codegen/visitor-plugin-common": "^5.8.0",
     "@types/node": "^22.15.21",
+    "change-case-all": "^2.1.0",
+    "graphql": "^16.11.0",
+    "graphql-tag": "^2.12.6",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3"
   }
