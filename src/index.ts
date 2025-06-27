@@ -1,5 +1,5 @@
 import { Types, PluginFunction } from '@graphql-codegen/plugin-helpers';
-import { visit, GraphQLSchema, concatAST, Kind } from 'graphql';
+import { visit, GraphQLSchema, concatAST } from 'graphql';
 import { MethodsVisitor } from './visitor';
 import { format } from 'prettier';
 
